@@ -6,7 +6,9 @@ import data from './data'
 const svgTextStyle = {
   fill: '#6b7280',
   // fontFamily: 'Lucida Sans Typewriter',
-  fontFamily: `'Roboto Mono', monospace`,
+  // fontFamily: `'Roboto Mono', monospace`,
+  // fontFamily: 'Verdana',
+  fontFamily: 'Courier New',
   // fontFamily: "'VT323', monospace",
   // fontFamily: "'Nanum Gothic Coding', monospace",
   fontSize: '10px', //14px
