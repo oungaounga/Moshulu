@@ -8,7 +8,7 @@ const svgTextStyle = {
   // fontFamily: 'Lucida Sans Typewriter',
   // fontFamily: `'Roboto Mono', monospace`,
   // fontFamily: 'Verdana',
-  fontFamily: 'Courier New',
+  fontFamily: 'Courier',
   // fontFamily: "'VT323', monospace",
   // fontFamily: "'Nanum Gothic Coding', monospace",
   fontSize: '10px', //14px
