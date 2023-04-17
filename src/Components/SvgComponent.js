@@ -8,7 +8,7 @@ const svgTextStyle = {
   // fontFamily: 'Lucida Sans Typewriter',
   // fontFamily: `'Roboto Mono', monospace`,
   // fontFamily: 'Verdana',
-  fontFamily: 'Courier',
+  // fontFamily: 'Courier',
   // fontFamily: "'VT323', monospace",
   // fontFamily: "'Nanum Gothic Coding', monospace",
   fontSize: '10px', //14px
@@ -30,6 +30,7 @@ function SvgComponent(props) {
     <text
       xmlns="http://www.w3.org/2000/svg"
       style={svgTextStyle}
+      font-family="courier"
       x="20"
       y={index * 6.5}
       key={index}
