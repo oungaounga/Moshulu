@@ -110,7 +110,7 @@
   transform: scale(1.75);
   margin-left: 5rem;
   margin-top: 1rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New' !important;
 }
 
 .container-article {
