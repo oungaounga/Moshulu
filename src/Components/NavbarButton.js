@@ -1,4 +1,5 @@
 /** @format */
+import {Link} from 'react-router-dom'
 
 function NavbarButton(props) {
   return (
@@ -7,7 +8,7 @@ function NavbarButton(props) {
       style={props.style}
       onClick={props.onClick}
     >
-      {props.icon}
+      <Link to={props.link}>{props.icon}</Link>
     </div>
   )
 }

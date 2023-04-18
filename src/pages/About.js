@@ -2,9 +2,9 @@
 
 function About(props) {
   return (
-    <div className="container-article">
+    <div className="p-5 w-screen md:w-[45rem] backdrop-blur-[2px] rounded-sm">
       <div className="appear">
-        <p className="texto">
+        <p className="text-justify subpixel-antialiased	 text-[#cbd5e1]">
           Aliqua aliqua aliquip magna dolore voluptate cillum elit dolore Lorem
           amet irure occaecat. Sunt in sit officia aute duis magna ut et
           voluptate occaecat aliqua veniam esse. Aute ullamco exercitation enim

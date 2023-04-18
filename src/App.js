@@ -1,49 +1,43 @@
 /** @format */
 
-import {Fragment, useRef, useState, useEffect} from 'react'
-import {CSSTransition, TransitionGroup} from 'react-transition-group'
+import {useState} from 'react'
+import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
+import useMediaQuery from './useMediaQuery'
 
-import Navbar from './Components/Navbar'
-import SvgComponent from './Components/SvgComponent'
-import About from './Components/About'
-import Experience from './Components/Experience'
-import Projects from './Components/Projects'
+//-----------------components--------------------//
+import Navbar from './components/Navbar'
+//---------------------pages--------------------//
+import About from './pages/About'
+import Experience from './pages/Experience'
+import Projects from './pages/Projects'
+import HomePage from './pages/HomePage'
+//---------------------------------------------//
+
 import './Global.css'
 
 function App() {
-  const [openMenu, setOpenMenu] = useState(false)
-  const [menuGoto, setMenuGoto] = useState(null)
-  const [vboxX, setVboxX] = useState(
-    130 - (window.innerWidth / window.innerHeight) * 90
-  )
-  const [arrowScale, setArrowScale] = useState(window.innerWidth / 750)
-  const [svgScale, setSvgScale] = useState(window.innerWidth / -43)
-
-  window.addEventListener('resize', () => {
-    setArrowScale(window.innerWidth / 750)
-    // setArrowScale(window.innerWidth / 1750)
-    setSvgScale(window.innerWidth / -43)
-    setVboxX(130 - (window.innerWidth / window.innerHeight) * 90)
-    console.log(window.innerWidth / window.innerHeight)
-  })
+  const isPhone = useMediaQuery('(max-width: 400px)')
+  const [openMenu, setOpenMenu] = useState(isPhone ? true : false)
   return (
-    <div className="main">
-      <div className="container">
-        <Navbar
-          openMenu={openMenu}
-          setOpenMenu={setOpenMenu}
-          menuGoto={menuGoto}
-          setMenuGoto={setMenuGoto}
-          arrowScale={arrowScale}
-        />
-        <SvgComponent toggle={openMenu} svgScale={svgScale} vboxX={vboxX} />
-        <div className="container-article">
-          {menuGoto === 'About' && <About />}
-          {menuGoto === 'Projects' && <Projects />}
-          {menuGoto === 'Experience' && <Experience />}
+    <BrowserRouter>
+      <div className="w-screen min-h-screen bodyzer overflow-x-hidden">
+        <div className="relative flex flex-col items-center justify-center">
+          <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={
+                !isPhone ? <HomePage /> : <Navigate replace to={'about'} />
+              }
+            />
+            <Route exact path="about" element={<About />} />
+            <Route exact path="projects" element={<Projects />} />
+            <Route exact path="experience" element={<Experience />} />
+          </Routes>
         </div>
       </div>
-    </div>
+    </BrowserRouter>
   )
 }
 
