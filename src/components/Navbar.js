@@ -22,10 +22,10 @@ function Navbar(props) {
         onClick={() => {
           setOpenMenu(!openMenu)
           navigate(
-            window.location == 'http://localhost:3000/about' ||
-              'http://localhost:3000/projects' ||
-              'http://localhost:3000/experience'
-              ? '/'
+            window.location == 'http://localhost:3000/Moshulu/about' ||
+              'http://localhost:3000/Moshulu/projects' ||
+              'http://localhost:3000/Moshulu/experience'
+              ? '/Moshulu'
               : '/about'
           )
         }}
