@@ -25,7 +25,7 @@ function Navbar(props) {
             window.location == 'http://localhost:3000/Moshulu/about' ||
               'http://localhost:3000/Moshulu/projects' ||
               'http://localhost:3000/Moshulu/experience'
-              ? '/Moshulu'
+              ? '/Moshulu/'
               : '/about'
           )
         }}

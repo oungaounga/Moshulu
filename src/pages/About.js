@@ -4,6 +4,7 @@ function About(props) {
   return (
     <div className="p-5 w-screen md:w-[45rem] backdrop-blur-[2px] rounded-sm">
       <div className="appear">
+        <p className="text-2xl subpixel-antialiased"> Je me présente </p>
         <p className="text-justify subpixel-antialiased	 text-[#cbd5e1]">
           Aliqua aliqua aliquip magna dolore voluptate cillum elit dolore Lorem
           amet irure occaecat. Sunt in sit officia aute duis magna ut et
