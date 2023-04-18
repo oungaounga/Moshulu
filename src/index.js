@@ -8,4 +8,10 @@ import App from './App'
 // import App from './AppN'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<App />)
+root.render(
+  <>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </>
+)

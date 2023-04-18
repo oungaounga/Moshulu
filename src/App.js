@@ -1,6 +1,6 @@
 /** @format */
 
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import {BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import useMediaQuery from './useMediaQuery'
 
@@ -18,26 +18,28 @@ import './Global.css'
 function App() {
   const isPhone = useMediaQuery('(max-width: 400px)')
   const [openMenu, setOpenMenu] = useState(isPhone ? true : false)
+
+  window.performance.navigation.type === 1
+    ? (window.location.pathname = '/Moshulu')
+    : console.log('nothing')
   return (
-    <BrowserRouter>
-      <div className="w-screen min-h-screen bodyzer overflow-x-hidden">
-        <div className="relative flex flex-col items-center justify-center">
-          <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
-          <Routes>
-            <Route
-              exact
-              path="/Moshulu"
-              element={
-                !isPhone ? <HomePage /> : <Navigate replace to={'about'} />
-              }
-            />
-            <Route exact path="/Moshulu/about" element={<About />} />
-            <Route exact path="/Moshulu/projects" element={<Projects />} />
-            <Route exact path="/Moshulu/experience" element={<Experience />} />
-          </Routes>
-        </div>
+    <div className="w-screen min-h-screen bodyzer overflow-x-hidden">
+      <div className="relative flex flex-col items-center justify-center">
+        <Navbar openMenu={openMenu} setOpenMenu={setOpenMenu} />
+        <Routes>
+          <Route
+            exact
+            path="/Moshulu"
+            element={
+              !isPhone ? <HomePage /> : <Navigate replace to={'about'} />
+            }
+          />
+          <Route exact path="/Moshulu/about" element={<About />} />
+          <Route exact path="/Moshulu/projects" element={<Projects />} />
+          <Route exact path="/Moshulu/experience" element={<Experience />} />
+        </Routes>
       </div>
-    </BrowserRouter>
+    </div>
   )
 }
 

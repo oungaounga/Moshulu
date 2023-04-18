@@ -15,12 +15,27 @@ function Navbar(props) {
   let setOpenMenu = props.setOpenMenu
   const isNotPhone = useMediaQuery('(min-width: 640px)')
 
+  // const handleBeforeUnload = () => {
+  //   console.log('here')
+  //   navigate('/Moshulu')
+  //   window.location.pathname = '/Moshulu'
+  // }
+
+  // window.BeforeUnloadEvent = handleBeforeUnload
+
+  // window.addEventListener('beforeunload', (e) => {
+  //   e.preventDefault()
+  //   console.log('from event listener', window.location.pathname)
+  //   window.location.pathname = '/Moshulu'
+  // })
+
   return (
     <div className="flex flex-col sm:flex-row lg:ml-[10rem] justify-start w-full mt-5 sm:mt-10 md:w-[45rem] lg:w-[50rem]">
       <div
         className="hidden md:block mr-14 w-[5rem] md:w-[6rem] pt-3"
         onClick={() => {
           setOpenMenu(!openMenu)
+          console.log(window.location.pathname)
           navigate(
             window.location == 'http://localhost:3000/Moshulu/about' ||
               'http://localhost:3000/Moshulu/projects' ||

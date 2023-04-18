@@ -44,7 +44,8 @@ function SvgComponent(props) {
       width={1500 / 1.75} //902/1.75
       height={850 / 1.75} //475/1.75
       // viewBox="130 -25 902 475"
-      viewBox={`${props.vboxX} 0 902 475`}
+      // viewBox={`${props.vboxX} 0 902 475`}
+      viewBox={`0 0 902 475`}
     >
       {aFrame}
     </svg>

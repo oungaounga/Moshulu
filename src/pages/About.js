@@ -1,10 +1,20 @@
 /** @format */
 
+import {useEffect} from 'react'
+import {useNavigate} from 'react-router-dom'
+
 function About(props) {
+  // const nav = useNavigate()
+  // useEffect(() => {
+  //   window.addEventListener('beforeunload', (e) => {
+  //     e.preventDefault()
+  //     nav(0)
+  //   })
+  // }, [])
   return (
     <div className="p-5 w-screen md:w-[45rem] backdrop-blur-[2px] rounded-sm">
       <div className="appear">
-        <p className="text-2xl subpixel-antialiased"> Je me présente </p>
+        <p className="text-2xl subpixel-antialiased">Je me présente </p>
         <p className="text-justify subpixel-antialiased	 text-[#cbd5e1]">
           Aliqua aliqua aliquip magna dolore voluptate cillum elit dolore Lorem
           amet irure occaecat. Sunt in sit officia aute duis magna ut et
