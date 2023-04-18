@@ -58,15 +58,24 @@ function Navbar(props) {
         <div className="flex">
           <div className="flex w-full lg:w-[35rem] justify-center">
             <div className=" relative w-[6.5rem] sm:w-[8rem] md:w-[9.5rem] flex self-center">
-              <Link className="absolute w-full h-full" to="about"></Link>
+              <Link
+                className="absolute w-full h-full"
+                to="Moshulu/about"
+              ></Link>
               <AboutIcon />
             </div>
             <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex  justify-self-center">
-              <Link className="absolute w-full h-full" to="projects"></Link>
+              <Link
+                className="absolute w-full h-full"
+                to="Moshulu/projects"
+              ></Link>
               <ProjectsIcon />
             </div>
             <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex justify-self-center">
-              <Link className="absolute w-full h-full" to="experience"></Link>
+              <Link
+                className="absolute w-full h-full"
+                to="Moshulu/experience"
+              ></Link>
               <ExpIcon />
             </div>
           </div>
@@ -80,15 +89,21 @@ function Navbar(props) {
       >
         <div className="flex w-full lg:w-[35rem] justify-center">
           <div className=" relative w-[6.5rem] sm:w-[8rem] md:w-[9.5rem] flex self-center">
-            <Link className="absolute w-full h-full" to="about"></Link>
+            <Link className="absolute w-full h-full" to="Moshulu/about"></Link>
             <AboutIcon />
           </div>
           <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex  justify-self-center">
-            <Link className="absolute w-full h-full" to="projects"></Link>
+            <Link
+              className="absolute w-full h-full"
+              to="Moshulu/projects"
+            ></Link>
             <ProjectsIcon />
           </div>
           <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex justify-self-center">
-            <Link className="absolute w-full h-full" to="experience"></Link>
+            <Link
+              className="absolute w-full h-full"
+              to="Moshulu/experience"
+            ></Link>
             <ExpIcon />
           </div>
         </div>
