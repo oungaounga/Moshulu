@@ -26,14 +26,14 @@ function App() {
           <Routes>
             <Route
               exact
-              path="/"
+              path="/Moshulu"
               element={
                 !isPhone ? <HomePage /> : <Navigate replace to={'about'} />
               }
             />
-            <Route exact path="about" element={<About />} />
-            <Route exact path="projects" element={<Projects />} />
-            <Route exact path="experience" element={<Experience />} />
+            <Route exact path="/Moshulu/about" element={<About />} />
+            <Route exact path="/Moshulu/projects" element={<Projects />} />
+            <Route exact path="/Moshulu/experience" element={<Experience />} />
           </Routes>
         </div>
       </div>
