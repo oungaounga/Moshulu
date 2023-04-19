@@ -10,7 +10,7 @@ import {ReactComponent as ExpIcon} from './svg/exp.svg'
 import {ReactComponent as ProjectsIcon} from './svg/projects.svg'
 
 function Navbar(props) {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   let openMenu = props.openMenu
   let setOpenMenu = props.setOpenMenu
   const isNotPhone = useMediaQuery('(min-width: 640px)')
@@ -35,19 +35,20 @@ function Navbar(props) {
         className="hidden md:block mr-14 w-[5rem] md:w-[6rem] pt-3"
         onClick={() => {
           setOpenMenu(!openMenu)
-          console.log(window.location.pathname)
-          navigate(
-            window.location == 'http://localhost:3000/about' ||
-              'http://localhost:3000/projects' ||
-              'http://localhost:3000/experience'
-              ? '/'
-              : '/about'
-          )
+          // console.log(window.location.pathname)
+          // navigate(
+          //   window.location == 'http://localhost:3000/about' ||
+          //     'http://localhost:3000/projects' ||
+          //     'http://localhost:3000/experience'
+          //     ? '/'
+          //     : '/about'
+          // )
+          // navigate('')
         }}
       >
-        {/* <Link to="/"> */}
-        <ArrowIcon />
-        {/* </Link> */}
+        <Link to="/">
+          <ArrowIcon />
+        </Link>
       </div>
 
       <div className="mb-5 md:hidden text-center flex flex-col justify-center gap-3">
@@ -73,15 +74,15 @@ function Navbar(props) {
         <div className="flex">
           <div className="flex w-full lg:w-[35rem] justify-center">
             <div className=" relative w-[6.5rem] sm:w-[8rem] md:w-[9.5rem] flex self-center">
-              <Link className="absolute w-full h-full" to="about"></Link>
+              <Link className="absolute w-full h-full" to="/about"></Link>
               <AboutIcon />
             </div>
             <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex  justify-self-center">
-              <Link className="absolute w-full h-full" to="projects"></Link>
+              <Link className="absolute w-full h-full" to="/projects"></Link>
               <ProjectsIcon />
             </div>
             <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex justify-self-center">
-              <Link className="absolute w-full h-full" to="experience"></Link>
+              <Link className="absolute w-full h-full" to="/experience"></Link>
               <ExpIcon />
             </div>
           </div>
@@ -95,15 +96,15 @@ function Navbar(props) {
       >
         <div className="flex w-full lg:w-[35rem] justify-center">
           <div className=" relative w-[6.5rem] sm:w-[8rem] md:w-[9.5rem] flex self-center">
-            <Link className="absolute w-full h-full" to="about"></Link>
+            <Link className="absolute w-full h-full" to="/about"></Link>
             <AboutIcon />
           </div>
           <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex  justify-self-center">
-            <Link className="absolute w-full h-full" to="projects"></Link>
+            <Link className="absolute w-full h-full" to="/projects"></Link>
             <ProjectsIcon />
           </div>
           <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex justify-self-center">
-            <Link className="absolute w-full h-full" to="experience"></Link>
+            <Link className="absolute w-full h-full" to="/experience"></Link>
             <ExpIcon />
           </div>
         </div>

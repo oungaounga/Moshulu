@@ -34,12 +34,12 @@ function App() {
               !isPhone ? <HomePage /> : <Navigate replace to={'about'} />
             }
           />
-          <Route exact path="about" element={<About />} />
-          <Route exact path="projects" element={<Projects />} />
-          <Route exact path="experience" element={<Experience />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/experience" element={<Experience />} />
         </Routes>
         <p className="text-lg text-center mt-3">
-          changes from 09:51 19/04/2023
+          changes from 10:23 19/04/2023
         </p>
       </div>
     </div>
