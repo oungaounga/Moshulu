@@ -1,4 +1,6 @@
 /** @format */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -275,7 +277,7 @@ list-element-header {
     z-index: 10;
   }
 
-  .list-element {
+  . {
     margin: 0.5rem;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;

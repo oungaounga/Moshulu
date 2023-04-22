@@ -19,9 +19,13 @@ body {
   color: white;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  color: #d1d5db;
+} */
+code {
+  font-family: Consolas, monospace;
   color: #d1d5db;
 }
 
