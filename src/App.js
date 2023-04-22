@@ -1,7 +1,7 @@
 /** @format */
 
 import {useState, useEffect} from 'react'
-import {Routes, Route, Navigate} from 'react-router-dom'
+import {Routes, Route, Navigate, useLocation} from 'react-router-dom'
 import useMediaQuery from './useMediaQuery'
 
 //-----------------components--------------------//
@@ -17,11 +17,10 @@ import './Global.css'
 
 function App() {
   const isPhone = useMediaQuery('(max-width: 400px)')
-  const [openMenu, setOpenMenu] = useState(isPhone ? true : false)
-
-  // window.performance.navigation.type === 1
-  //   ? (window.location.pathname = '/')
-  //   : console.log('nothing')
+  let location = useLocation()
+  const [openMenu, setOpenMenu] = useState(
+    isPhone || location.pathname !== '/' ? true : false
+  )
   return (
     <div className="w-screen min-h-screen bodyzer overflow-x-hidden">
       <div className="relative flex flex-col items-center justify-center">
@@ -38,9 +37,6 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/experience" element={<Experience />} />
         </Routes>
-        <p className="text-lg text-center mt-3">
-          changes from 10:23 19/04/2023
-        </p>
       </div>
     </div>
   )

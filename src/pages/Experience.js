@@ -1,40 +1,94 @@
 /** @format */
 
+import {Link} from 'react-router-dom'
+
 function Experience(props) {
+  const ITEM_CONTAINER = 'flex flex-col m-1'
+  const LOCATION_TEXT =
+    'text-sm md:text-base indent-1 md:indent-2 text-neutral-400'
   return (
-    <div className="p-5 w-screen md:w-[45rem] backdrop-blur-[2px] rounded-sm">
-      <div className="appear">
-        <p className="text-justify subpixel-antialiased	 text-[#cbd5e1]">
-          Pariatur consequat do sunt ad nisi Lorem aliqua mollit occaecat
-          occaecat labore anim laborum. Dolore nulla est dolor tempor occaecat
-          in cillum cillum cillum Lorem sint commodo non occaecat. Reprehenderit
-          nisi exercitation Lorem aliqua non ex qui veniam. Eiusmod ipsum sint
-          velit fugiat qui labore ea mollit aliquip sit. Ullamco id cupidatat
-          sunt do aliquip ullamco excepteur laborum. Nulla in aute ut
-          exercitation in duis dolore quis voluptate nisi cupidatat anim Lorem
-          anim. Nisi sunt mollit non sint tempor eu occaecat eu ullamco cillum
-          labore nostrud laboris officia. Velit fugiat ad deserunt aliquip irure
-          ullamco dolor Lorem sint eiusmod ut. Quis ea pariatur deserunt
-          occaecat amet laborum reprehenderit ullamco velit nisi ipsum sit dolor
-          sint. Irure cupidatat quis laboris occaecat dolor excepteur magna
-          deserunt tempor. Aliquip amet Lorem dolor qui mollit. Non laborum
-          ipsum nisi ea. Esse qui dolore ad ut culpa ex laboris occaecat
-          deserunt do. Minim quis ea qui magna incididunt id anim irure amet eu
-          dolor id est velit. Irure do velit ea reprehenderit ut Lorem officia
-          id anim cillum irure. Esse tempor pariatur nulla eu eiusmod pariatur
-          quis tempor sint amet. Dolor Lorem eiusmod excepteur esse dolor do
-          tempor excepteur et eiusmod aute aute. In amet officia quis qui dolor
-          cupidatat sunt qui consequat nulla est ex. Duis velit aliquip
-          incididunt laborum non aliquip consequat adipisicing. Labore occaecat
-          mollit et consequat. Cupidatat occaecat labore velit sunt adipisicing
-          cillum anim ullamco reprehenderit laborum ut commodo. Quis deserunt ea
-          consequat enim velit cupidatat in consequat sint. Est velit laborum
-          excepteur ex nulla commodo incididunt proident. Amet ea Lorem ipsum
-          culpa ipsum fugiat aute aute nulla ullamco commodo ea dolor irure.
-        </p>
+    // <div className="p-5 w-screen flex justify-center md:w-[45rem] min-h-[75rem] backdrop-blur-[2px] rounded-sm">
+    <div className="p-5 appear w-screen flex justify-center md:w-[45rem] min-h-screen md:min-h-[75rem] backdrop-blur-[2px] rounded-sm">
+      <div className="w-full h-full flex flex-col gap-6">
+        <div className="w-full flex flex-col gap-4">
+          <div className="w-full flex justify-between">
+            <code className="text-xl md:text-2xl">Education</code>
+            <code className="after:content-['_↗'] hover:underline">
+              CV (PDF)
+            </code>
+          </div>
+          <div className="flex flex-col divide-y-[0.5px] gap-2 divide-neutral-700">
+            <div className={ITEM_CONTAINER}>
+              <p className="text-lg">Baccalauréat STI2D ITEC, Très Bien</p>
+              <p className={LOCATION_TEXT}>
+                {' '}
+                Déodat de Séverac High School, Toulouse, France
+              </p>
+            </div>
+            <div className={ITEM_CONTAINER}>
+              <p className="text-lg">Classe Préparatoire aux Grandes écoles</p>
+              <p className={LOCATION_TEXT}>
+                {' '}
+                Léonce Vieljeux High School, La Rochelle
+              </p>
+            </div>
+            <div className={ITEM_CONTAINER}>
+              <p className="text-lg">Licence Mathématiques Générales</p>
+              <p className={LOCATION_TEXT}>
+                {' '}
+                University of Science, Montpellier
+              </p>
+            </div>
+            <div className={ITEM_CONTAINER}>
+              <p className="text-lg">MANU Masters 1</p>
+              <p className={LOCATION_TEXT}>
+                {' '}
+                University of Science, Montpellier
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex flex-col gap-4">
+          <code className="text-xl md:text-xl">Work Experience</code>
+          <div className="flex flex-col divide-y-[0.5px] gap-2 divide-neutral-700">
+            <div className={ITEM_CONTAINER}>
+              <p className="text-lg">Employé Polyvalent, Carrefour City</p>
+              <p className={LOCATION_TEXT}> Avenue de Barcelone, Toulouse</p>
+            </div>
+            <div className={ITEM_CONTAINER}>
+              <p className="text-lg">Responsable de Rayon, Carrefour City</p>
+              <p className={LOCATION_TEXT}>
+                {' '}
+                Boulevard de Strasbourd, Montpellier
+              </p>
+            </div>
+            <div className={ITEM_CONTAINER}>
+              <p className="text-lg">Enseignant Mathématiques</p>
+              <p className={LOCATION_TEXT}> Acadomia, Montpellier</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
 }
 
 export default Experience
+
+// sublinks ?
+//       <ul className="flex justify-start">
+//           <code className="hover:underline">
+//             <Link to="text-lg">PDF</Link>
+//           </code>
+//         </ul>
+//       <div className="bg-slate-300 w-[2480px] h-[3508px] scale-[0.3]">
+//           <div className="w-full h-full flex flex-col">
+//             <div className="w-full h-[15%] bg-red-500"></div>
+//             <div className="w-full h-[65%] flex">
+//               <div className="w-[50%] h-full bg-green-400"></div>
+//               <div className="w-[50%] h-full bg-blue-600"></div>
+//             </div>
+//             <div></div>
+//             <div></div>
+//           </div>
+//         </div>

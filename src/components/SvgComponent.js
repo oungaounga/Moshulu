@@ -40,7 +40,7 @@ function SvgComponent(props) {
   ))
   return (
     <svg
-      className="svg"
+      className="svg blur-[0.3px]"
       width={1500 / 1.75} //902/1.75
       height={850 / 1.75} //475/1.75
       // viewBox="130 -25 902 475"

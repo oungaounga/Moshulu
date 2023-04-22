@@ -35,15 +35,6 @@ function Navbar(props) {
         className="hidden md:block mr-14 w-[5rem] md:w-[6rem] pt-3"
         onClick={() => {
           setOpenMenu(!openMenu)
-          // console.log(window.location.pathname)
-          // navigate(
-          //   window.location == 'http://localhost:3000/about' ||
-          //     'http://localhost:3000/projects' ||
-          //     'http://localhost:3000/experience'
-          //     ? '/'
-          //     : '/about'
-          // )
-          // navigate('')
         }}
       >
         <Link to="/">
@@ -52,25 +43,6 @@ function Navbar(props) {
       </div>
 
       <div className="mb-5 md:hidden text-center flex flex-col justify-center gap-3">
-        {/* <div className="flex justify-center gap-5">
-          <div className="relative">
-            <Link className="absolute w-full h-full" to="/"></Link>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-              />
-            </svg>
-          </div>
-        </div> */}
         <div className="flex">
           <div className="flex w-full lg:w-[35rem] justify-center">
             <div className=" relative w-[6.5rem] sm:w-[8rem] md:w-[9.5rem] flex self-center">
