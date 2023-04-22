@@ -10,144 +10,82 @@ function Projects(props) {
               These are projects I've worked on, to build a skill set, learn
               concepts and design patternss, new technologies
             </p>
-            <div className="m-[0.5rem] pt-[0.3rem] pb-[0.3rem]">
-              <div className="flex justify-between">
-                <code className="flex flex-col">
-                  <a
-                    href={'https://instagram.com/erasmusmontpellier/'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{textDeoration: 'none', color: 'white'}}
-                    onClick={() =>
-                      window.open(
-                        'https://instagram.com/erasmusmontpellier/',
-                        '_blank'
-                      )
-                    }
-                  >
-                    Erasmus Montpellier's website
-                  </a>{' '}
-                  <span className="text-[#475569]">23/03/2023 - current</span>
-                </code>
-              </div>
-              <div className="font-mono text-sm flex flex-col">
-                <p className="font-mono mt-[0.8rem] ml-[0.5rem] mr-[0.5rem] text-sm text-justify">
-                  <a>Erasmus Montpellier</a> is an association started by my
-                  friend Quentin Fontana, aiming to help international students
-                  on a year abroad in Montpellier. It needs a platform to manage
-                  students and to develop a network. I'm currently building the
-                  website, which presents the association and its main activity,
-                  organizing events. Users can create a profile and join events.
-                </p>
-                <div className="ml-4 mt-2">
+            <div className="flex flex-col mt-[2rem] divide-y-[1px] divide-neutral-600">
+              <div className=" pb-[0.3rem]">
+                <div className="flex justify-between">
+                  <code className="flex flex-col">
+                    <a
+                      href={'https://instagram.com/erasmusmontpellier/'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{textDeoration: 'none', color: 'white'}}
+                      onClick={() =>
+                        window.open(
+                          'https://instagram.com/erasmusmontpellier/',
+                          '_blank'
+                        )
+                      }
+                    >
+                      Erasmus Montpellier's website
+                    </a>{' '}
+                    <span className="text-[#475569]">23/03/2023 - current</span>
+                  </code>
+                </div>
+                <div className="font-mono md:text-base flex flex-col gap-2 ml-[0.5rem] mr-[0.5rem] ">
+                  <p className="text-justify">
+                    <a>Erasmus Montpellier</a> is an association started by my
+                    friend Quentin Fontana, aiming to help international
+                    students on a year abroad in Montpellier. It needs a
+                    platform to manage students and to develop a network. I'm
+                    currently building the website, which presents the
+                    association and its main activity, organizing events. Users
+                    can create a profile and join events.
+                  </p>
                   <p>
                     {' '}
                     <p className="inline font-semibold">Stack</p>: React,
                     Firebase, Tailwind, NextUI
                   </p>
-                  {/* <ul className="ml-2">
-                    <li>React</li>
-                    <li>Firebase</li>
-                    <li>Tailwind</li>
-                    <li>NextUI</li>
-                  </ul> */}
                 </div>
               </div>
-            </div>
 
-            <div className="list-element list-line-separator">
-              <div
-                style={{display: 'flex', justifyContent: 'space-between'}}
-                // className="list-element-header"
-              >
-                <p style={{margin: 0}} className="list-element-hearder-title">
-                  <a
-                    href={'https://instagram.com/erasmusmontpellier/'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{textDeoration: 'none', color: 'white'}}
-                    onClick={() =>
-                      window.open(
-                        'https://instagram.com/erasmusmontpellier/',
-                        '_blank'
-                      )
-                    }
-                  >
-                    Erasmus
-                  </a>{' '}
-                  website
-                </p>
-                <span
-                  style={{margin: 0, color: '#475569'}}
-                  className="list-element-header-date"
-                >
-                  23/03/2023
-                </span>
+              <div className="mt-[2rem] pb-[0.3rem]">
+                <div className="flex justify-between">
+                  <code className="flex flex-col">
+                    <a
+                      href={'https://instagram.com/erasmusmontpellier/'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() =>
+                        window.open(
+                          'https://oungaounga.github.io/tetris-vanille-project/',
+                          '_blank'
+                        )
+                      }
+                    >
+                      Tetris Vanille
+                    </a>{' '}
+                    <span className="text-[#475569]">17/01/2023</span>
+                  </code>
+                </div>
+                <div className="font-mono md:text-base flex flex-col">
+                  <p className="ml-[0.5rem] mr-[0.5rem] text-justify">
+                    A tetris game, partially built, using vanilla javascript and
+                    the canvas API. I didn't want to use any high-order
+                    libraries, only pure html and javascript. The 'physics' is a
+                    matrice of coordinates on the game board, when a cube moves,
+                    the coordinate matrice and the canvas are updated. I used
+                    functionnal classes to organize the objects
+                  </p>
+                  <div className="ml-2 mt-2">
+                    <p>
+                      {' '}
+                      <p className="inline font-semibold">Stack</p>: HTML, CSS,
+                      Javascript
+                    </p>
+                  </div>
+                </div>
               </div>
-              <p
-                style={{
-                  marginBottom: 0,
-                  marginTop: '0.8rem',
-                  marginLeft: '0.5rem',
-                  marginRight: '0.5rem',
-                  color: '#cbd5e1',
-                }}
-              >
-                Et eiusmod cillum incididunt nostrud Lorem dolore reprehenderit
-                minim elit culpa mollit commodo consequat. Id consectetur elit
-                ad irure commodo. Duis mollit culpa mollit sunt esse sunt culpa
-                cupidatat esse dolore officia velit reprehenderit id.
-              </p>
-            </div>
-            <div className="list-element list-line-separator">
-              <div
-                style={{display: 'flex', justifyContent: 'space-between'}}
-                // className="list-element-header"
-              >
-                <a
-                  href={'https://oungaounga.github.io/tetris-vanille-project/'}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{textDeoration: 'none', color: 'white', margin: 0}}
-                >
-                  Tetris Vanille
-                </a>
-                <span style={{margin: 0, color: '#475569'}}>17/01/2023</span>
-              </div>
-              <p className="list-element-body">
-                A small tetris game to learn essentially javascript code
-                processes
-              </p>
-            </div>
-            <div className="list-element list-line-separator">
-              <div
-                style={{display: 'flex', justifyContent: 'space-between'}}
-                // className="list-element-header"
-              >
-                <p style={{margin: 0}}>Consequat quis est</p>
-                <span style={{margin: 0, color: '#475569'}}>23/03/2023</span>
-              </div>
-              <p className="list-element-body">
-                Et eiusmod cillum incididunt nostrud Lorem dolore reprehenderit
-                minim elit culpa mollit commodo consequat. Id consectetur elit
-                ad irure commodo. Duis mollit culpa mollit sunt esse sunt culpa
-                cupidatat esse dolore officia velit reprehenderit id.
-              </p>
-            </div>
-            <div className="list-element list-line-separator">
-              <div
-                style={{display: 'flex', justifyContent: 'space-between'}}
-                // className="list-element-header"
-              >
-                <p style={{margin: 0}}>Consequat quis est</p>
-                <span style={{margin: 0, color: '#475569'}}>23/03/2023</span>
-              </div>
-              <p className="list-element-body">
-                Et eiusmod cillum incididunt nostrud Lorem dolore reprehenderit
-                minim elit culpa mollit commodo consequat. Id consectetur elit
-                ad irure commodo. Duis mollit culpa mollit sunt esse sunt culpa
-                cupidatat esse dolore officia velit reprehenderit id.
-              </p>
             </div>
           </div>
         </div>
