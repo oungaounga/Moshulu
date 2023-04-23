@@ -13,7 +13,7 @@ function Navbar(props) {
   // const navigate = useNavigate()
   let openMenu = props.openMenu
   let setOpenMenu = props.setOpenMenu
-  const isNotPhone = useMediaQuery('(min-width: 640px)')
+  const isNotPhone = useMediaQuery('(min-width: 768px)')
 
   // const handleBeforeUnload = () => {
   //   console.log('here')
@@ -60,27 +60,30 @@ function Navbar(props) {
           </div>
         </div>
       </div>
-      <CSSTransition
-        in={openMenu}
-        classNames="navbaritems"
-        timeout={500}
-        unmountOnExit
-      >
-        <div className="flex w-full lg:w-[35rem] justify-center">
-          <div className=" relative w-[6.5rem] sm:w-[8rem] md:w-[9.5rem] flex self-center">
-            <Link className="absolute w-full h-full" to="/about"></Link>
-            <AboutIcon />
+      {isNotPhone ? (
+        <CSSTransition
+          in={openMenu}
+          classNames="navbaritems"
+          // className={isNotPhone ? 'hidden' : ''}
+          timeout={500}
+          unmountOnExit
+        >
+          <div className="flex w-full lg:w-[35rem] justify-center">
+            <div className=" relative w-[6.5rem] sm:w-[8rem] md:w-[9.5rem] flex self-center">
+              <Link className="absolute w-full h-full" to="/about"></Link>
+              <AboutIcon />
+            </div>
+            <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex  justify-self-center">
+              <Link className="absolute w-full h-full" to="/projects"></Link>
+              <ProjectsIcon />
+            </div>
+            <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex justify-self-center">
+              <Link className="absolute w-full h-full" to="/experience"></Link>
+              <ExpIcon />
+            </div>
           </div>
-          <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex  justify-self-center">
-            <Link className="absolute w-full h-full" to="/projects"></Link>
-            <ProjectsIcon />
-          </div>
-          <div className="relative w-[7rem] sm:w-[8.5rem] md:w-[10rem] flex justify-self-center">
-            <Link className="absolute w-full h-full" to="/experience"></Link>
-            <ExpIcon />
-          </div>
-        </div>
-      </CSSTransition>
+        </CSSTransition>
+      ) : null}
     </div>
   )
 }

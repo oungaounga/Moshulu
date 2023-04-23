@@ -9,20 +9,11 @@ function Projects(props) {
         <div className="appear">
           {' '}
           <div>
-            <p>
+            {/* <p>
               These are projects I've worked on, to build a skill set, learn
               concepts, design patterns and new technologies.
-            </p>
-            <div className="flex flex-col justify-center p-3">
-              <div className="w-full flex justify-center">
-                <img src={img} alt="img" className="w-4/5 h-4/5 rounded-xl" />
-              </div>
+            </p> */}
 
-              <p className="text-sm text-center text-slate-600">
-                {' '}
-                visualize value
-              </p>
-            </div>
             <div className="flex flex-col mt-[2rem] divide-y-[1px] divide-neutral-600">
               <div className=" pb-[0.3rem]">
                 <div className="flex flex-col justify-between">
@@ -220,6 +211,20 @@ function Projects(props) {
                     <p> Python, HTML, CSS, Javascript</p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-6 border-none flex flex-col justify-center p-3">
+                <div className="w-full flex justify-center transition ease-in-out  hover:-translate-y-1 hover:scale-105 duration-300">
+                  <img
+                    src={img}
+                    alt="img"
+                    className=" w-4/5 h-4/5 rounded-xl"
+                  />
+                </div>
+
+                <p className="text-sm text-center text-slate-600">
+                  {' '}
+                  visualize value ©
+                </p>
               </div>
             </div>
           </div>
