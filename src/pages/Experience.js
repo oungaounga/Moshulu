@@ -1,11 +1,63 @@
 /** @format */
 
-import {Link} from 'react-router-dom'
+//-----------------Styles-----------------//
+const ITEM_CONTAINER = 'flex flex-col m-1'
+const LOCATION_TEXT =
+  'text-sm md:text-base indent-1 md:indent-2 text-neutral-400'
+
+const expAng = [
+  [
+    'Baccalauréat STI2D ITEC, Très Bien',
+    'Déodat de Severac High School, Toulouse, France',
+    '2018',
+  ],
+  [
+    'Class Préparatoire aux Grandes Ecoles',
+    'Léonce Vieljeux High School, La Rochelle, France',
+    '2019',
+  ],
+  ['Mathématiques Générales Licence', 'University of Montpellier', '2021'],
+  ['MANU Masters 1', 'University of Montpellier', '2022'],
+]
+const expFr = [
+  ['title', 'location', 'date'],
+  ['title', 'location', 'date'],
+  ['title', 'location', 'date'],
+]
+const workExpAng = [
+  [
+    'Employé Polyvalent, Carrefour City',
+    'Avenue de Barcelone, Toulouse',
+    '2019/2020',
+  ],
+  [
+    'Responsable de Rayon, Carrefour City',
+    'Boulevard de Strasbourg, Montpllier',
+    '2020/2023',
+  ],
+  ['Enseignant de Mathématiques', 'Acadomia, Montpellier', '2022/current'],
+]
+const workExpFr = [
+  ['title', 'location', 'date'],
+  ['title', 'location', 'date'],
+  ['title', 'location', 'date'],
+]
+
+const MakeExpItem = (props) => {
+  const item = props.item
+  return (
+    <>
+      <div className={ITEM_CONTAINER}>
+        <p className="text-lg">{item[0]}</p>
+        <p className={LOCATION_TEXT}> {item[1]}</p>
+      </div>
+    </>
+  )
+}
 
 function Experience(props) {
-  const ITEM_CONTAINER = 'flex flex-col m-1'
-  const LOCATION_TEXT =
-    'text-sm md:text-base indent-1 md:indent-2 text-neutral-400'
+  let exp = props.lang ? expAng : expFr
+  let work = props.lang ? workExpAng : workExpFr
   return (
     // <div className="p-5 w-screen flex justify-center md:w-[45rem] min-h-[75rem] backdrop-blur-[2px] rounded-sm">
     <div className="p-5 w-screen flex justify-center md:w-[45rem] min-h-fit backdrop-blur-[2px] rounded-sm">
@@ -19,7 +71,7 @@ function Experience(props) {
               </code>
             </div>
             <div className="flex flex-col divide-y-[0.5px] gap-2 divide-neutral-700">
-              <div className={ITEM_CONTAINER}>
+              {/* <div className={ITEM_CONTAINER}>
                 <p className="text-lg">Baccalauréat STI2D ITEC, Très Bien</p>
                 <p className={LOCATION_TEXT}>
                   {' '}
@@ -48,13 +100,16 @@ function Experience(props) {
                   {' '}
                   University of Science, Montpellier
                 </p>
-              </div>
+              </div> */}
+              {exp.map((item) => {
+                return <MakeExpItem item={item} />
+              })}
             </div>
           </div>
           <div className="w-full flex flex-col gap-4">
             <code className="text-xl md:text-xl">Work Experience</code>
             <div className="flex flex-col divide-y-[0.5px] gap-2 divide-neutral-700">
-              <div className={ITEM_CONTAINER}>
+              {/* <div className={ITEM_CONTAINER}>
                 <p className="text-lg">Employé Polyvalent, Carrefour City</p>
                 <p className={LOCATION_TEXT}> Avenue de Barcelone, Toulouse</p>
               </div>
@@ -68,7 +123,10 @@ function Experience(props) {
               <div className={ITEM_CONTAINER}>
                 <p className="text-lg">Enseignant Mathématiques</p>
                 <p className={LOCATION_TEXT}> Acadomia, Montpellier</p>
-              </div>
+              </div> */}
+              {work.map((item) => {
+                return <MakeExpItem item={item} />
+              })}
             </div>
           </div>
         </div>
