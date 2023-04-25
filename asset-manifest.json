@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Moshulu/static/css/main.005bd662.css",
-    "main.js": "/Moshulu/static/js/main.3531ae91.js",
+    "main.css": "/Moshulu/static/css/main.82544a5f.css",
+    "main.js": "/Moshulu/static/js/main.af2538b3.js",
     "static/media/exp.svg": "/Moshulu/static/media/exp.5f025368cc4ce93db25f5494b3978cc7.svg",
-    "static/media/img1.jpg": "/Moshulu/static/media/img1.d7de775bba95b85d8bc0.jpg",
     "static/media/projects.svg": "/Moshulu/static/media/projects.1f0e44060260efd815c2488189ebf59c.svg",
     "static/media/about.svg": "/Moshulu/static/media/about.58d37d011e1d8e767edbc6f1d899754b.svg",
+    "static/media/img1.PNG": "/Moshulu/static/media/img1.41e1d68342cf0aa9cf86.PNG",
     "static/media/arrow.svg": "/Moshulu/static/media/arrow.44e67a831d97bfa91744d8310352e722.svg",
     "index.html": "/Moshulu/index.html",
-    "main.005bd662.css.map": "/Moshulu/static/css/main.005bd662.css.map",
-    "main.3531ae91.js.map": "/Moshulu/static/js/main.3531ae91.js.map"
+    "main.82544a5f.css.map": "/Moshulu/static/css/main.82544a5f.css.map",
+    "main.af2538b3.js.map": "/Moshulu/static/js/main.af2538b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.005bd662.css",
-    "static/js/main.3531ae91.js"
+    "static/css/main.82544a5f.css",
+    "static/js/main.af2538b3.js"
   ]
 }
