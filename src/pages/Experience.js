@@ -69,12 +69,12 @@ function Experience(props) {
     <div className="p-5 w-screen flex justify-center md:w-[45rem] min-h-fit backdrop-blur-[2px] rounded-sm">
       <div className=" appear w-full h-full flex flex-col gap-6">
         <div className="w-full flex flex-col gap-4">
-          <div className="w-full flex justify-between">
-            <code className="text-xl md:text-2xl">Education</code>
-            <code className="after:content-['_↗'] hover:underline">
+          <div className="flex justify-end">
+            <code className="after:content-['_↗'] hover:underline hover:cursor-pointer">
               CV (PDF)
             </code>
           </div>
+          <code className="text-xl md:text-2xl">Education</code>
           <div className="flex flex-col divide-y-[0.5px] gap-2 divide-neutral-700">
             {exp.map((item) => {
               return <MakeExpItem item={item} />

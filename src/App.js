@@ -6,6 +6,7 @@ import useMediaQuery from './useMediaQuery'
 
 //-----------------components--------------------//
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 //---------------------pages--------------------//
 import About from './pages/About'
 import Experience from './pages/Experience'
@@ -23,27 +24,30 @@ function App() {
   )
   const [lang, setLang] = useState(true) //true is for eng
   return (
-    <div className="w-screen min-h-screen bodyzer overflow-x-hidden">
-      <div className="relative flex flex-col items-center justify-center">
-        <Navbar
-          openMenu={openMenu}
-          setOpenMenu={setOpenMenu}
-          lang={{lang, setLang}}
-        />
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={
-              !isPhone ? <HomePage /> : <Navigate replace to={'about'} />
-            }
+    <>
+      <div className="w-screen min-h-screen bodyzer overflow-x-hidden">
+        <div className="relative flex flex-col items-center justify-center">
+          <Navbar
+            openMenu={openMenu}
+            setOpenMenu={setOpenMenu}
+            lang={{lang, setLang}}
           />
-          <Route path="/about" element={<About lang={lang} />} />
-          <Route path="/projects" element={<Projects lang={lang} />} />
-          <Route path="/experience" element={<Experience lang={lang} />} />
-        </Routes>
+          <Routes>
+            <Route
+              exact
+              path="/"
+              element={
+                !isPhone ? <HomePage /> : <Navigate replace to={'about'} />
+              }
+            />
+            <Route path="/about" element={<About lang={lang} />} />
+            <Route path="/projects" element={<Projects lang={lang} />} />
+            <Route path="/experience" element={<Experience lang={lang} />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
-    </div>
+    </>
   )
 }
 

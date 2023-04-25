@@ -1,23 +1,6 @@
 /** @format */
 
-import img from './img1.jpg'
-// const description = (
-//   <p className="text-justify">
-//     <a
-//       href="https://instagram.com/erasmusmontpellier"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//       className="hover:underline"
-//     >
-//       Erasmus Montpellier
-//     </a>{' '}
-//     is an association started by my friend Quentin Fontana, aiming to help
-//     international students on a year abroad in Montpellier. It needs a platform
-//     to manage students and to develop a network. I'm currently building the
-//     website, which presents the association and its main activity, organizing
-//     events. Users can create a profile and join events.
-//   </p>
-// )
+import img from './img1.PNG'
 
 const projectsAng = [
   [
@@ -70,7 +53,6 @@ const projectsAng = [
     'https://github.com/oungaounga/project21808112.github.io',
   ],
 ]
-
 const projectsFr = [
   ['titre', 'date', 'description', 'stack techs'],
   ['titre', 'date', 'description', 'stack techs'],
@@ -80,7 +62,6 @@ const projectsFr = [
 //<MakeProjectItem list = {lang ? projectsAng : projectsFr}
 const MakeProjectItem = (props) => {
   const item = props.item
-  console.log('item[5]', item[4])
   return (
     <>
       <div className=" pb-[0.3rem]">
@@ -144,7 +125,7 @@ function Projects(props) {
               concepts, design patterns and new technologies.
             </p> */}
 
-            <div className="flex flex-col mt-[2rem] gap-6 divide-y-[1px] divide-neutral-600">
+            <div className="flex flex-col gap-6 divide-y-[1px] divide-neutral-600">
               {projects.map((item) => {
                 return (
                   <>
@@ -153,18 +134,23 @@ function Projects(props) {
                 )
               })}
               <div className="mt-6 border-none flex flex-col justify-center p-3">
-                <div className="w-full flex justify-center transition ease-in-out  hover:-translate-y-1 hover:scale-105 duration-300">
+                <div className="w-full flex justify-center transition ease-in-out">
                   <img
                     src={img}
                     alt="img"
-                    className=" w-4/5 h-4/5 rounded-xl"
+                    className=" w-full h-full sm:w-4/5 sm:h-4/5 rounded-xl"
                   />
                 </div>
 
-                <p className="text-sm text-center text-slate-600">
+                <a
+                  href="https://twitter.com/visualizevalue?s=20"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-center text-slate-600 hover:scale-105 duration-100"
+                >
                   {' '}
                   visualize value ©
-                </p>
+                </a>
               </div>
             </div>
           </div>
