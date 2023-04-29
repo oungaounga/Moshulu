@@ -7,24 +7,50 @@ const LOCATION_TEXT =
 
 const expAng = [
   [
-    'Baccalauréat STI2D ITEC, Très Bien',
+    'Baccalauréat STI2D, ITEC, Grade : Très Bien',
     'Déodat de Severac High School, Toulouse, France',
     '2018',
   ],
   [
-    'Class Préparatoire aux Grandes Ecoles',
+    'Class Préparatoire aux Grandes Écoles, TSI',
     'Léonce Vieljeux High School, La Rochelle, France',
-    '2019',
+    '2018/2019',
   ],
-  ['Mathématiques Générales Licence', 'University of Montpellier', '2021'],
+  ['Mathematics Degree', 'University of Montpellier', '2021'],
   ['MANU Masters 1', 'University of Montpellier', '2022'],
 ]
 const expFr = [
-  ['title', 'location', 'date'],
-  ['title', 'location', 'date'],
-  ['title', 'location', 'date'],
+  [
+    'Baccalauréat STI2D, spécialité ITEC, Mention Très Bien',
+    'Lycée Déodat de Severac, Toulouse',
+    '2018',
+  ],
+  [
+    'Class Préparatoire aux Grandes Écoles, TSI',
+    'Lycée Léonce Vieljeux, La Rochelle',
+    '2018/2019',
+  ],
+  [
+    'Licence Mathématiques Générales',
+    'Faculté des Sciences, Montpellier',
+    '2019/2021',
+  ],
+  [
+    'Master 1 Modélisation et Analyse Numérique',
+    'Faculté des Sciences, Montpellier',
+    '2021/2022',
+  ],
 ]
 const workExpAng = [
+  ['Employee, Carrefour City', 'Avenue de Barcelone, Toulouse', '2019/2020'],
+  [
+    'Aisle Manager, Carrefour City',
+    'Boulevard de Strasbourg, Montpllier',
+    '2020/2023',
+  ],
+  ['Mathematics Tutor', 'Acadomia, Montpellier', '2022/current'],
+]
+const workExpFr = [
   [
     'Employé Polyvalent, Carrefour City',
     'Avenue de Barcelone, Toulouse',
@@ -36,11 +62,6 @@ const workExpAng = [
     '2020/2023',
   ],
   ['Enseignant de Mathématiques', 'Acadomia, Montpellier', '2022/current'],
-]
-const workExpFr = [
-  ['title', 'location', 'date'],
-  ['title', 'location', 'date'],
-  ['title', 'location', 'date'],
 ]
 
 const MakeExpItem = (props) => {

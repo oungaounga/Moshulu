@@ -4,8 +4,8 @@ import img from './img1.PNG'
 
 const projectsAng = [
   [
-    'Erasmus website',
-    'current',
+    "Erasmus Montpellie's website",
+    '03/2023 - current',
     <p className="text-justify">
       <a
         href="https://instagram.com/erasmusmontpellier"
@@ -53,10 +53,55 @@ const projectsAng = [
     'https://github.com/oungaounga/project21808112.github.io',
   ],
 ]
+
 const projectsFr = [
-  ['titre', 'date', 'description', 'stack techs'],
-  ['titre', 'date', 'description', 'stack techs'],
-  ['titre', 'date', 'description', 'stack techs'],
+  [
+    "Site Web d'Erasmus Life",
+    '03/2023 - présent',
+    <p className="text-justify ml-[0.5rem] mr-[0.5rem]">
+      <a
+        href="https://instagram.com/erasmusmontpellier"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:underline"
+      >
+        Erasmus Montpellier
+      </a>{' '}
+      est une association universitaire d'un ami, visant à aider les étudiants
+      internationaux à Montpellier. Je me charge actuellement de l'entièreté du
+      site web, qui n'a pour fonctions actuelles uniquement la présentation de
+      l'association et l'annonce des prochains événements organisés.
+    </p>,
+    'React, Firebase, Tailwind CSS, NextUI, react-router, Swiper API, Pigeon Maps',
+    'https://fire-test-3c6f5.web.app/',
+    'https://github.com/oungaounga/firebase-test',
+  ],
+  [
+    'Tetris Vanille',
+    '17/01/2023',
+    <p className="ml-[0.5rem] mr-[0.5rem] text-justify">
+      On encourage de coder un jeu ou une application connue et basique en
+      partant de zéro. Tetris est l'un des jeux auxquels j'ai le plus joué, j'ai
+      donc codé une partie du jeu en utilisant uniquement javascript, HTML et
+      CSS (d'où le mot «Vanille» sur le nom).
+    </p>,
+    'HTML, CSS, Javascript',
+    'https://oungaounga.github.io/tetris-vanille-project/',
+    'https://github.com/oungaounga/tetris-vanille-project',
+  ],
+  [
+    'Optimisation class project website',
+    '2021',
+    <p className="ml-[0.5rem] mr-[0.5rem] text-justify">
+      Premier site web. Dans le cadre du cours d'Optimisation et de
+      Modélisation, il était demandé d'avoir une page internet où on présentait
+      tous nos rapport. Les résultats sont codés en Python, les rapport en
+      LaTeX, où sur Jupyter Notebook.
+    </p>,
+    'Python, HTML, CSS, LaTeX, Jupyter Notebook',
+    'https://oungaounga.github.io/project21808112.github.io/',
+    'https://github.com/oungaounga/project21808112.github.io',
+  ],
 ]
 
 //<MakeProjectItem list = {lang ? projectsAng : projectsFr}
