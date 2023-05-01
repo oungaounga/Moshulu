@@ -40,13 +40,14 @@ function SvgComponent(props) {
   ))
   return (
     <svg
-      className="svg blur-[0.3px]"
+      className="svg blur-[0.3px] hover:cursor-pointer"
       width={1500 / 1.75} //902/1.75
       height={850 / 1.75} //475/1.75
       // viewBox="130 -25 902 475"
       // viewBox={`${props.vboxX} 0 902 475`}
       viewBox={`0 0 902 475`}
     >
+      <title>Venom Snake, Metal Gear Solid : Phantom Pain</title>
       {aFrame}
     </svg>
   )
