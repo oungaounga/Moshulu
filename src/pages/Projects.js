@@ -4,7 +4,7 @@ import img from './img1.PNG'
 
 const projectsAng = [
   [
-    "Erasmus Montpellie's website",
+    "Erasmus Montpellier's website",
     '03/2023 - current',
     <p className="text-justify">
       <a
@@ -56,7 +56,7 @@ const projectsAng = [
 
 const projectsFr = [
   [
-    "Site Web d'Erasmus Life",
+    "Site Web d'Erasmus Montpellier",
     '03/2023 - présent',
     <p className="text-justify ml-[0.5rem] mr-[0.5rem]">
       <a
