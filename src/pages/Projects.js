@@ -1,12 +1,13 @@
 /** @format */
 
 import img from './img1.PNG'
+import {Link} from 'react-router-dom'
 
 const projectsAng = [
   [
     "Erasmus Montpellier's website",
     '03/2023 - current',
-    <p className="text-justify">
+    <p className="ml-[0.5rem] mr-[0.5rem] text-justify">
       <a
         href="https://instagram.com/erasmusmontpellier"
         target="_blank"
@@ -21,9 +22,11 @@ const projectsAng = [
       building the website, which presents the association and its main
       activity, organizing events. Users can create a profile and join events.
     </p>,
-    'React, Firebase, Tailwind, NextUI',
+    'React, Firebase, Tailwind CSS, NextUI, react-router, Swiper API, Pigeon Maps',
     'https://fire-test-3c6f5.web.app/',
     'https://github.com/oungaounga/firebase-test',
+    'See more',
+    'whyEM',
   ],
   [
     'Tetris Vanille',
@@ -75,6 +78,8 @@ const projectsFr = [
     'React, Firebase, Tailwind CSS, NextUI, react-router, Swiper API, Pigeon Maps',
     'https://fire-test-3c6f5.web.app/',
     'https://github.com/oungaounga/firebase-test',
+    'Voir plus',
+    'whyEM',
   ],
   [
     'Tetris Vanille',
@@ -151,6 +156,14 @@ const MakeProjectItem = (props) => {
         <div className="md:text-base flex flex-col gap-2 ml-[0.5rem] mr-[0.5rem] ">
           {item[2]}
           <p>{item[3]}</p>
+          {item[6] ? (
+            <Link to={item[7]}>
+              {' '}
+              <p className="hover:font-bold text-lg hover:underline  text-end font-mono">
+                {item[6]}
+              </p>{' '}
+            </Link>
+          ) : null}
         </div>
       </div>
     </>

@@ -147,6 +147,9 @@ function Navbar(props) {
           <div className="flex flex-col justify-end">
             <div className="flex w-[32rem] text-xl justify-end">
               <div>
+                {/* <Link to="projects/whyEM">
+                  <p>About Erasmus</p>{' '}
+                </Link> */}
                 <code
                   className="hover:underline cursor-pointer ml-[0.2rem] mr-[0.2rem]"
                   onClick={() => {

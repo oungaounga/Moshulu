@@ -12,6 +12,7 @@ import About from './pages/About'
 import Experience from './pages/Experience'
 import Projects from './pages/Projects'
 import HomePage from './pages/HomePage'
+import Article from './pages/Article'
 //---------------------------------------------//
 
 import './Global.css'
@@ -43,6 +44,7 @@ function App() {
             <Route path="/about" element={<About lang={lang} />} />
             <Route path="/projects" element={<Projects lang={lang} />} />
             <Route path="/experience" element={<Experience lang={lang} />} />
+            <Route path="/projects/whyEM" element={<Article lang={lang} />} />
           </Routes>
         </div>
         <Footer />
